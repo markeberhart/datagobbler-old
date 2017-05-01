@@ -1,0 +1,62 @@
+{
+    "dataLayers":{
+        "csv-data": {
+            "title":"CSV Data",
+            "apiInfo": {
+                "url":"./resources/data/data_1478285103105.csv",
+                "fileType":"csv",
+                "filterOut":[],
+                "byPropertyObjects":["name"],
+                "proxyUrl":null,
+                "dateInfo": {
+                    "fieldNameForDate":"timestamp",
+                    "dateFormat":"MM/DD/YYYY HH:MM:SS",
+                    "overwriteDate":"false",
+                    "dateToUseIfOverwritingDate":"2016-11-04"
+                },
+                "ifNotSpatialDataType":{
+                    "forceGeoReferencing":"true",
+                    "fieldToUseForLatitude":"latitude",
+                    "fieldToUseForLongitude":"longitude",
+                    "geometryType":"point"
+                }
+            }
+        },
+        "counties":{
+            "title":"All US Counties",
+            "apiInfo": {
+                "url":"./resources/data/counties.zip",
+                "fileType":"zip",
+                "filterOut":[],
+                "byPropertyObjects":["STATEFP"],
+                "proxyUrl":null,
+                "dateInfo": {
+                    "fieldNameForDate":"DATE_COLUMN_TO_USE",
+                    "dateFormat":"MM/DD/YYYY",
+                    "overwriteDate":"false",
+                    "dateToUseIfOverwritingDate":"2016-10-04"
+                },
+                "ifNotSpatialDataType":{
+                    "forceGeoReferencing":"true",
+                    "fieldToUseForLatitude":"latitude",
+                    "fieldToUseForLongitude":"longitude",
+                    "geometryType":"point"
+                }
+            }
+        }
+    },
+     
+    "dataOptions": {
+        "defaultProxyUrl":"./resources/data/data.aspx?url=",
+        "defaultDates": {
+            "dateStart":-10,
+            "dateEnd":0,
+            "defaultUIDateStart":-5,
+            "defaultUIDateEnd":-1
+        },
+        "dataBounds": {
+            "southWest":[36,-85],
+            "northEast":[38,-60]
+        }
+    }
+}
